@@ -71,7 +71,6 @@ ul {
     outline: none;
     width: 100%;
     height: 50px;
-    /* padding-left: 30px; */
 }
 
 .search-input::placeholder {
@@ -238,9 +237,10 @@ nav {
 /* section top-news start */
 
 .top-news {
+    position: relative;
     background-color: #262D33;
     padding-top: 30px;
-    padding-bottom: 315px;
+    padding-bottom: 300px;
 
 }
 
@@ -251,7 +251,7 @@ nav {
     border-radius: 10px;
     padding: 25px 0;
     margin-bottom: 30px;
-    position: relative;
+
 }
 
 .news {
@@ -292,14 +292,20 @@ nav {
     display: block;
 }
 
+/* section top-news end */
+
 /* main-news block start */
 
 .main-news {
+    position: absolute;
     display: flex;
     border-radius: 10px;
-    height: 570px;
     background-image: url(../img/main-news-bg.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1140px;
+    top: 38%;
+    box-shadow: 0px 0px 8px 1px rgba(34, 60, 80, 0.08);
 }
 
 .left-part {
@@ -358,4 +364,172 @@ nav {
     line-height: 50px;
     color: #FFFFFF;
     width: 68%;
+    margin-bottom: 45px;
+}
+
+.readmore {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #4592FF;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+.readmore:hover {
+    background-color: #2a64b4;
+}
+
+.readmore .arrow {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/Arrow.svg);
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    left: 5px;
+}
+
+.play-info {
+    display: flex;
+    align-items: center;
+}
+
+.manual {
+    display: flex;
+    align-items: center;
+}
+
+.audio-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFF;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
+.time {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFF;
+    opacity: 0.4;
+    letter-spacing: 0.5px;
+}
+
+.audio-play {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/Play-btn.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.recommended-news {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 100%;
+}
+
+.recommended-news>div {
+    background-color: #fff;
+    width: 100%;
+}
+
+.recommended-news .active {
+    background-color: #F5F5F5;
+}
+
+.recommended {
+    border-radius: 0 10px 0 0;
+}
+
+.recommended h3 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    border-bottom: 1px solid #D9DADB;
+}
+
+.recommended-title {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.food-genre {
+    color: #3BBDC4;
+}
+
+.cars-genre {
+    color: #6E99AE;
+}
+
+.movies-genre {
+    color: #AC8EE3;
+}
+
+.nfl-genre {
+    color: #FFA34D;
+}
+
+.techreviews-genre {
+    color: #3DC47E;
+}
+
+.recommended-news>div a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+    text-transform: capitalize;
+}
+
+.recommended-news>.recommended~div {
+    position: relative;
+    padding: 20px 25px;
+    border-bottom: 1px solid #D9DADB;
+}
+
+.techreviews {
+    border-radius: 0 0 10px 0;
+}
+
+.recommended-news>div:hover a {
+    text-decoration: underline;
+}
+
+.recommended-news>.active::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #F5F5F5;
+    transform: rotate(45deg);
+    top: calc(50% - 10px);
+    left: -10px;
+}
+
+.recommended-news>div a .play {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/Play.svg);
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    left: 5px;
+}
+.recommended-news>.recommended~div:last-child {
+    border-bottom: none
 }
