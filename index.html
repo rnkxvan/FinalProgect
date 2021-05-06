@@ -34,8 +34,40 @@
                 </div>
                 <div class="sign-box">
                     <span class="sign-ico"></span>
-                    <a href="#" class="sign">Sign In</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="sign">Sign In</a>
                 </div>
+
+                <!-- modal content start -->
+
+                <div style="display: none;" id="modal">
+                    <form class="sign-form" action="" method="post">
+                        <div class="name-group">
+                            <input autocomplete="off" type="text" id="username" name="username" placeholder=" " required>
+                            <label class="username" for="username">Enter your login name<span>*</span></label>
+                        </div>
+                        <div class="password-group">
+                            <input type="password" id="password" name="password" placeholder=" " required>
+                            <label class="password" for="password">Enter your password<span>*</span></label>
+                        </div>
+
+                        <div class="phone-group">
+                            <input type="tel" id="tel" name="tel" placeholder=" " required>
+                            <label class="telephone" for="tel">Enter your phone number<span>*</span></label>
+                        </div>
+
+                        <div class="email-group">
+                            <input type="email" id="email" name="email" placeholder=" ">
+                            <label class="email" for="email">Enter your E-mail</label>
+                        </div>
+                        <div class="subscribe-group">
+                            <input type="checkbox" name="subscribenews" id="subscribenews">
+                            <label class="subscribenews" for="subscribenews">Subscribe for get news?</label>
+                        </div>
+                        <input class="btn sub-btn" type="submit" value="Sign In">
+                        <input class="btn res-btn" type="reset" value="Reset">
+                    </form>
+                </div>
+                <!-- modal content end -->
             </div>
             <div class="bottom-part">
                 <div class="logo">
@@ -531,8 +563,10 @@
                     <p class="bottom-news-genre careers-genre">Careers</p>
                     <div class="flex-wrap">
                         <div class="careers-block-content">
-                            <h4 class="careers-block-title"><a href="">Had a Job Interview but No Callback? Here’s What to Do</a></h4>
-                            <p class="careers-block-text">Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize</p>
+                            <h4 class="careers-block-title"><a href="">Had a Job Interview but No Callback? Here’s What
+                                    to Do</a></h4>
+                            <p class="careers-block-text">Try to understand the culture of the company where you want to
+                                work and be authentic in your interview, experts emphasize</p>
                             <a href="" class="readmore">Read more <span class="arrow"></span></a>
                         </div>
                         <div class="circle"></div>
@@ -555,9 +589,10 @@
         </div>
     </section>
 
+
     <script src="https://kit.fontawesome.com/01c0b993e2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="jquery.fancybox.min.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
