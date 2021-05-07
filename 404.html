@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style_404.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Universal</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="top-part">
+                <div class="hamb-menu">
+                    <label for="menu-checkbox" class="hamb-ico"></label>
+                    <span class="sections">Sections</span>
+                </div>
+                <form class="search-form" action="GET">
+                    <button type="submit" class="search-btn"></button>
+                    <input class="search-input" type="text" name="search" placeholder="Search">
+                </form>
+                <div class="right-part">
+                    <div class="header-img">
+                        <img src="img/header-img.jpg" alt="">
+                    </div>
+                    <div class="subscribe">
+                        <a href="#">Subscribe Now</a>
+                        <p>3 month for 19$</p>
+                    </div>
+                </div>
+                <div class="sign-box">
+                    <span class="sign-ico"></span>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="sign">Sign In</a>
+                </div>
+
+                <!-- modal content start -->
+
+                <div style="display: none;" id="modal">
+                    <form class="sign-form" action="" method="post">
+                        <div class="name-group">
+                            <input autocomplete="off" type="text" id="username" name="username" placeholder=" " required>
+                            <label class="username" for="username">Enter your login name<span>*</span></label>
+                        </div>
+                        <div class="password-group">
+                            <input type="password" id="password" name="password" placeholder=" " required>
+                            <label class="password" for="password">Enter your password<span>*</span></label>
+                        </div>
+
+                        <div class="phone-group">
+                            <input type="tel" id="tel" name="tel" placeholder=" " required>
+                            <label class="telephone" for="tel">Enter your phone<span>*</span></label>
+                        </div>
+
+                        <div class="email-group">
+                            <input type="email" id="email" name="email" placeholder=" ">
+                            <label class="email" for="email">Enter your E-mail</label>
+                        </div>
+                        <div class="subscribe-group">
+                            <input type="checkbox" name="subscribenews" id="subscribenews">
+                            <label class="subscribenews" for="subscribenews">Subscribe for get news?</label>
+                        </div>
+                        <input class="btn sub-btn" type="submit" value="Sign In">
+                        <input class="btn res-btn" type="reset" value="Reset">
+                    </form>
+                </div>
+                <!-- modal content end -->
+            </div>
+            <div class="bottom-part">
+                <div class="logo">
+                    <a href="index.html"><img src="img/StatueofLiberty.png" alt="Logo"></a>
+                </div>
+                <p class="name">Boston and New York Bear Brunt</p>
+                <h1 class="edition-name">Universal</h1>
+                <p class="date">Monday, January 1, 2018</p>
+                <div class="weather">
+                    <span class="sun"></span>
+                    <span class="temp">- 23 °C</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="wrapper">
+                <input type="checkbox" name="checkbox" id="menu-checkbox">
+                <ul class="navigation">
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">opinion</a></li>
+                    <li><a href="#">science</a></li>
+                    <li><a href="#">life</a></li>
+                    <li><a href="#">travel</a></li>
+                    <li><a href="#">moneys</a></li>
+                    <li><a href="#">art & design</a></li>
+                    <li><a href="#">sports</a></li>
+                    <li><a href="#">people</a></li>
+                    <li><a href="#">health</a></li>
+                    <li><a href="#">education</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    
+    <footer>
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <div class="footer-logo">
+                        <img src="img/UNV.png" alt="">
+                    </div>
+                    <a href="">Contact Us</a>
+                    <a href="">Work with Us</a>
+                    <a href="">Advertise</a>
+                    <a href="">Your Ad Choise</a>
+                </div>
+                <div class="footer-soc">
+                    <a class="map animate__animated animate__bounce animate__slow animate__infinite infinite" data-fancybox data-src="#modalmap" href="javascript:;"><img src="img/placeholder.png" alt=""></a>
+                    <a class="fb" href=""><img src="img/Facebook.png" alt=""></a>
+                    <a class="twitter" href=""><img src="img/Twitter.png" alt=""></a>
+                    <a class="youtube" href=""><img src="img/YouTube.png" alt=""></a>
+                    <a class="instagram" href=""><img src="img/Instagram.png" alt=""></a>
+                    <div style="display: none;" id="modalmap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17114.90411415269!2d-74.0609760155249!3d40.68462789449972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c251ffc14008d9%3A0xa098b0206dbb32e0!2z0KHRgtCw0YLRg9GPINGB0LLQvtCx0L7QtNGL!5e0!3m2!1sru!2sua!4v1620395897057!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-text">
+                    Universal’s business concept is to offer fashion and quality at the best price in a sustainable way. 
+                    Universal has since it was founded in 2015 grown into one of the world's leading fashion companies. 
+                </p>
+                <p class="rights">© 2021 STEP Academy</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/01c0b993e2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider();
+        });
+    </script>
+</body>
+
+</html>
