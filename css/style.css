@@ -2083,11 +2083,42 @@ hr {
 
 /* media for 768px end */
 
+
+
 /* media for 320px start */
 
 @media only screen and (max-width: 425px) {
 
 
+    .sign-form {
+        width: 320px;
+    }
+    
+    .fancybox-slide--html .fancybox-close-small {
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+    
+    .sign-form>div {
+        margin-bottom: 20px;
+    }
+    
+    
+    .sign-form input {
+        width: 100%;
+    }
+    
+    
+    .sign-form label {
+        top: 50%;
+        left: 15%;
+    }
+    
+    
+    .subscribenews {
+        left: -10.3% !important;
+    
+    }
+    
     .right-part {
         display: none;
     }
@@ -2465,5 +2496,9 @@ hr {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    #modalmap>iframe {
+        width: 320px;
+        height: 90vh;
     }
 }
