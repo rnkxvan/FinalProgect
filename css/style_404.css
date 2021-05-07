@@ -11,6 +11,15 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+footer {
+    justify-self: end;
+    /* flex-shrink: 0; */
 }
 
 a,
@@ -58,7 +67,7 @@ ul {
 
 #menu-checkbox:checked~.navigation {
     position: relative;
-    transform: scaleY(0);
+    transform: scaleY(100%);
     transform-origin: top;
 }
 
@@ -367,6 +376,33 @@ nav {
 
 
 
+
+/* 404 content start */
+
+.paper-bg {
+    height:54vh;
+    background-image: url(../img/paper-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.error-block h1 {
+    position: relative;
+    top: calc(50% - 15px);
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* 404 content end */
+
+
+
+
+
 /* footer start */
 
 .footer-top {
@@ -540,142 +576,6 @@ nav {
         display: none;
     }
 
-    .news-main-box {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        background-color: #30363D;
-        border-radius: 10px;
-        padding: 25px 0;
-        margin-bottom: 30px;
-    }
-
-    .news {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 50%;
-        margin-bottom: 5px;
-        padding: 0 25px;
-        border-right: 1px solid #4B5157;
-    }
-
-    .main-news {
-        position: absolute;
-        display: flex;
-        border-radius: 10px;
-        background-image: url(../img/main-news-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 750px;
-        top: 42%;
-    }
-
-    .left-part {
-        width: 75%;
-        padding: 55px 0 0 55px;
-    }
-
-    .news-maker {
-        display: flex;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
-    .recommended-news {
-        display: flex;
-        flex-direction: column;
-        width: 35%;
-        height: 100%;
-    }
-
-    .recommended-news>.recommended~div {
-        padding: 20px 25px;
-    }
-
-    .recommended-news .cars {
-        display: none;
-    }
-
-    .secondary-news-block {
-        padding-top: 200px;
-        padding-bottom: 30px;
-    }
-
-    .secondary-news-box {
-        grid-template-columns: 66% 30%;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "cars-card popular-card"
-            "cars-card popular-card"
-            "coffe-card stressful-card";
-    }
-
-    .coffe-card {
-        padding-top: 60px;
-    }
-
-    .cats-card {
-        display: none;
-    }
-
-    .columns-card {
-        display: none;
-    }
-
-    .manufacture-card {
-        display: none;
-    }
-
-    .lemon-card {
-        display: none;
-    }
-
-    .center-title {
-        font-size: 32px;
-        width: 60%;
-    }
-
-    .center-news>.readmore {
-        margin-right: 0;
-
-    }
-
-    .bottom-news-block {
-        display: grid;
-        grid-template-columns: 66% 30%;
-        column-gap: 30px;
-    }
-
-    .dark-news-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-    }
-
-    .hot-block {
-        position: relative;
-        width: 555px;
-    }
-
-    .dark-news-section .coffe-card {
-        display: none;
-    }
-
-    .dark-news-section .manufacture-card {
-        display: none;
-    }
-
-    .subscribe-block {
-        padding-top: 280px;
-    }
-
-    #email-subscribe {
-        width: 35%;
-    }
-
     .footer-top {
         flex-direction: column;
     }
@@ -697,32 +597,32 @@ nav {
     .sign-form {
         width: 320px;
     }
-    
+
     .fancybox-slide--html .fancybox-close-small {
         color: rgba(255, 255, 255, 0.8) !important;
     }
-    
+
     .sign-form>div {
         margin-bottom: 20px;
     }
-    
-    
+
+
     .sign-form input {
         width: 100%;
     }
-    
-    
+
+
     .sign-form label {
         top: 50%;
         left: 15%;
     }
-    
-    
+
+
     .subscribenews {
         left: -10.3% !important;
-    
+
     }
-    
+
     .right-part {
         display: none;
     }
@@ -794,265 +694,6 @@ nav {
         border-bottom: 1px solid #4B5157;
     }
 
-    .news:last-child {
-        border-bottom: none;
-    }
-
-    .main-news {
-        position: absolute;
-        display: flex;
-        border-radius: 10px;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        top: 60%;
-    }
-
-    .top-news {
-        position: relative;
-        background-color: rgb(38, 45, 51);
-        padding-top: 30px;
-        padding-bottom: 300px;
-    }
-
-    .left-part {
-        display: none;
-    }
-
-    .recommended h3 {
-        text-align: center;
-    }
-
-    .recommended-news {
-        display: flex;
-        width: 96%;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .recommended {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .techreviews {
-        border-radius: 0 0 10px 10px;
-    }
-
-    .recommended-news>.active::before {
-        display: none;
-    }
-
-    .recommended-news .cars {
-        display: none;
-    }
-
-    .secondary-news-block {
-        padding-top: 150px;
-        padding-bottom: 30px;
-    }
-
-    .secondary-news-box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cars-left-part .cars-text {
-        margin-bottom: 20px;
-    }
-
-    .car-img img {
-        display: block;
-        width: 100%;
-    }
-
-    .cars-card .wrapper-card {
-        padding-left: 5px;
-    }
-
-    .cars-card {
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 7px;
-    }
-
-    .cars-content {
-        flex-direction: column;
-    }
-
-    .car-img {
-        width: 100%;
-    }
-
-    .coffe-card {
-        padding-top: 60px;
-    }
-
-    .cats-card {
-        display: none;
-    }
-
-    .columns-card {
-        display: none;
-    }
-
-    .manufacture-card {
-        display: none;
-    }
-
-    .lemon-card {
-        display: none;
-    }
-
-    .center-title {
-        font-size: 28px;
-        width: 100%;
-    }
-
-    .center-news>.readmore {
-        margin-right: 0;
-
-    }
-
-    .label-title {
-        color: #fff;
-        font-size: 12px;
-        line-height: 15px;
-        font-weight: 700;
-        border-radius: 3px;
-        background-color: #3DC47E;
-        padding: 5px 12px;
-        width: 66px;
-        height: 25px;
-        margin-bottom: 20%;
-        display: block;
-        transition: .3s;
-    }
-
-    .popular-card {
-        grid-area: popular-card;
-        background-image: url(../img/popular-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 18px;
-        border-radius: 10px;
-    }
-
-    .bottom-news-block {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bottom-news-section {
-        background-color: #E5E5E5;
-        padding-top: 60px;
-        padding-bottom: 20px;
-        height: auto;
-    }
-
-    .bottom-news-left {
-        margin-bottom: 20px;
-    }
-
-    .dark-news-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .careers-bg {
-        display: none;
-    }
-
-    .careers-block-content {
-        width: 100%;
-    }
-
-    .careers-block {
-        background-color: #B4D1E0;
-        border-radius: 10px;
-        padding: 20px;
-    }
-
-    .circle {
-        display: none;
-    }
-
-    .flex-wrap {
-        flex-direction: column;
-    }
-
-    .dark-news-section {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        height: auto;
-    }
-
-    .hot-block {
-        display: none;
-    }
-
-    .hot-title {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 45px;
-    }
-
-    .dark-news-section .coffe-card {
-        display: none;
-    }
-
-    .dark-news-section .manufacture-card {
-        display: none;
-    }
-
-    .subscribe-btn {
-        display: block;
-        margin: 0 auto;
-        color: #fff;
-        font-weight: 700;
-        background-color: #4592FF;
-        padding: 12px 28px;
-        border-radius: 20px;
-        outline: none;
-        border: none;
-        transition: .3s;
-        cursor: pointer;
-    }
-
-    .subscribe-block {
-        padding-top: 0;
-        padding-bottom: 30px;
-        margin-top: 30px;
-    }
-
-    #email-subscribe {
-        width: 50%;
-        margin-bottom: 20px;
-    }
-
-
-    .genre-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .genre-wrapper ul {
-        width: 33%;
-    }
-
-    .genre-wrapper ul li {
-        text-align: center;
-    }
-
-    .subscribe-title {
-        font-family: Roboto Slab;
-        font-size: 34px;
-        line-height: 50px;
-        color: #262D33;
-        font-weight: 700;
-        margin-bottom: 25px;
-    }
-
     .footer-top {
         flex-direction: column;
     }
@@ -1080,27 +721,13 @@ nav {
         align-items: center;
         justify-content: space-between;
     }
+
     .footer-text {
         text-align: center;
         margin-bottom: 20px;
         width: 90%;
     }
 
-    .recommended-item {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        padding: 17px 0;
-        border-bottom: 1px solid #D9DADB;
-        position: relative;
-    }
-    .bottom-news-left-item {
-        padding: 25px 0;
-        border-bottom: 1px solid #D9DADB;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
     #modalmap>iframe {
         width: 320px;
         height: 90vh;
